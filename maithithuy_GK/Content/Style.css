@@ -1,0 +1,121 @@
+﻿/*======title=======*/
+#nz-div-4 h3.tde :after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-left: 20px solid #661e1e;
+    border-bottom: 0px solid transparent;
+    border-right: 0 solid transparent;
+    position: absolute;
+    top: 0px;
+    right: -20px;
+}
+
+
+#nz-div-4 h3.tde :before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 40px 20px 0px 0px;
+    border-style: solid;
+    border-color: transparent;
+    border-right-color: #661e1e;
+    position: absolute;
+    top: 0px;
+    left: -20px;
+}
+
+#nz-div-4 h3.tde span {
+    background: #661e1e;
+    
+    padding: 10px 20px 8px 20px;
+    color: white;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+
+#nz-div-4 h3.tde {
+    text-align: center;
+    /*margin: 45px 0;*/
+    border-bottom: 2px solid #661e1e;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+/*.container {
+    margin-bottom: 2em;
+}*/
+
+/*==================================*/
+.product-home {
+    margin-top: 1em;
+}
+
+/*=====card=====*/
+.card {
+    border-radius: 4px;
+    width: 270px;
+    height: 200px;
+    margin: 1em;
+    box-shadow: 0 6px 6px 0 #e4c8c8;
+    padding: 0.7em;
+    background-color:white;
+}
+
+    .card:hover {
+        box-shadow: 0 15px 15px 0 #e4c8c8;
+    }
+
+#margin-card {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.card-1 {
+    background-color: antiquewhite;
+    padding: 1em;
+}
+.footer
+{
+    text-align:center;
+    background-color:#661e1e;
+    padding-top:3em;
+    /*position:fixed;*/
+    width:100%;
+    bottom:0px;
+ margin-top:1px;
+}
+
+/*=======home=======*/
+.tieude1,.tieude3 {
+    padding: 2em;
+    background-color: #661e1e;
+}
+.tieude2 {
+    background-color: antiquewhite;
+    height: 400px;
+    text-align: center;
+    padding-top: 4em;
+    color: #661e1e;
+}
+/*=nav===*/
+.navbar-inverse {
+    background-color: white;
+    color: #661e1e;
+}
+
+.navbar-inverse:hover {
+    color: #661e1e;
+}
+
+
+
+.owl-carousel .owl-item img {
+   width:400px;
+   height:400px;
+}
+
+

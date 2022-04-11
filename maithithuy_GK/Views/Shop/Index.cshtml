@@ -1,0 +1,31 @@
+﻿@model IEnumerable<maithithuy_GK.Models.Product>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container">
+    <div id='nz-div-4'>
+        <h3 class="tde">
+            <span>product</span>    
+        </h3>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-sm-6 col-lg-3 col-md-4" id="margin-card">
+                    <div class="card">
+                        <img src="~/Content/image/@item.ImageProduct" style="height:150px;width:250px;padding:4px;" />
+                        @Html.DisplayFor(model => item.NameProduct)<br />
+                        Price:@Html.DisplayFor(model => item.UnitPrice)
+                        @*<a href="/ShoppingCart/AddtoCart/@item.ID"><img src="@Url.Content("~/Content/Image/cart.png")" style="width:40px;height:30px;" /></a>*@
+                    </div>
+
+                </div>
+            }
+        </div>
+    </div>
+</div>
+

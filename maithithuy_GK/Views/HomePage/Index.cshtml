@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="tieude1">
+    <div class="row">
+        <div class="col-lg-6">
+            <img src="~/Content/image/bg3.jpg" style="width:100%;" />
+        </div>
+        <div class="col-lg-6">
+            <div style="background-color:white;height:370px;padding-top:9em;color:brown;">
+                <p style="font-size:3em;text-align:center;">DAILY DEALS</p>
+                <p style="text-align:center;margin-right:unset;">The sesonal special</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@*<style>
+    .owl-carousel .owl-theme .item img{
+        width:250px;
+        height: 250px;
+    }
+</style>*@
+<section style="        background: linear-gradient(45deg, black, transparent);
+        height: 500px;
+        background-color: #844d4d;
+">
+    <div class="container-fluid carousel-wrap" style=" height:350px;">
+        <div class="owl-carousel owl-theme" style="margin-top:50px;">
+            <div class="item"><img src="~/Content/image/shoes1.jpg" /></div>
+            <div class="item"><img src="~/Content/image/shoes2.jpg" /></div>
+            <div class="item"><img src="~/Content/image/shoes5.jpg" /></div>
+            <div class="item"><img src="~/Content/image/shoe4.jpg" /></div>
+            <div class="item"><img src="~/Content/image/shoe3.jpg" /></div>
+
+
+        </div>
+    </div>
+</section>
+
+<script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 3,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 1000,
+
+            autoplayHoverPause: false
+        });
+        $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay', [1000])
+        })
+        $('.stop').on('click', function () {
+            owl.trigger('stop.owl.autoplay')
+        })
+</script>
+
+
+<div class="tieude2">
+
+    <img style="border-radius:100%;" src="~/Content/image/bg4.jpg" />
+
+    <p style="margin-top:2px;font-weight:bold;font-size:2em;">ABOUT US</p>
+    <p style="text-align:center;">The best and most beautiful things in the world cannot be seen or even touched – they must be felt with the heart.</p>
+</div>
+
+<div class="tieude3">
+    <div class="row">
+        <div class="col-lg-6">
+            <div style="background-color:white;height:370px;padding-top:9em;color:brown;">
+                <p style="font-size:3em;text-align:center;">GIVE US A SHOUT</p>
+                <p style="text-align:center;">The sesonal special</p>
+            </div>
+
+        </div>
+        <div class="col-lg-6">
+            <img src="~/Content/image/bg3.jpg" style="width:100%;" />
+        </div>
+
+    </div>
+</div>
+
